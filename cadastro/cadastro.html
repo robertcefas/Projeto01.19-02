@@ -2,42 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-     <link rel="stylesheet" href="style.css">
-     <div class="tabs"
-     <button class="tab-button active"
-     onclick="openTab('login')">Cadastro</button>
-     <button class=" tab-button"
-     onclick="openTab('cadastro')">Cadastro</button>
-</div>
-
-<div id="login" class="tab-button">
-<h2>Cadastro</h2>
-<form
-  <input type="text" placeholder="Usuários">
-  <input type="password" placeholder="Senha">
-  <button type="submit">entrar</button>
-</form>
-</div>
-
-<div id="cadastro" class="tab-content"
-style="display: none;">
-><h2>Cadastro</h2>
-><form 
-   <input type="text" placeholder="Nome">
-   <input type="email" placeholder="email">
-   <input type="text" placeholder="Senha">
-   <button type="submit">Cadastrar</button>
-
-</div>
-
-
-</div>
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+<header>
+    <div class="barra-topo">
+        <div class="logo-topo">
+            Shock Imports
+        </div>
+        <div class="menu-topo">
+            <a href="../home/home.html">Home</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<div class="form-container">
+    <h2>Cadastro</h2>
+    <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+</main>
+
+<footer>
+    © 2026 Shock Imports - Todos os direitos reservados
+</footer>
+
 </body>
 </html>

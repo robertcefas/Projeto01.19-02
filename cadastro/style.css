@@ -1,25 +1,79 @@
 
+input[type="radio"] {
+    display: none;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(94, 23, 235, 0.4);
+}
+
+
 .tabs {
     display: flex;
-    gap: 10px;
     margin-bottom: 20px;
 }
 
-.tab.button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #ccc;
+.tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(94, 23, 235);
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    border-radius: 5px 5px 0 0;
+    transition: 0.3s;
 }
 
-.tab.button.active {
-    background-color:  #f04;
+
+#login-tab:checked ~ .tabs label[for="login-tab"],
+#cadastro-tab:checked ~ .tabs label[for="cadastro-tab"] {
+    background-color: rgb(94, 23, 235);
+}
+
+
+.tab-content {
+    display: none;
+}
+
+
+#login-tab:checked ~ .content .login {
+    display: block;
+}
+
+#cadastro-tab:checked ~ .content .cadastro {
+    display: block;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(94, 23, 235);
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
-.tab.content {
-    border: 1px solid #ccc;
-    padding:  20px;
-    border-radius:  0 5px 5px;
+button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(94, 23, 235);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
