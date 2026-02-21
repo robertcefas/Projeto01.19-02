@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+     <link rel="stylesheet" href="style.css">
+     <div class="tabs"
+     <button class="tab-button active"
+     onclick="openTab('login')">Cadastro</button>
+     <button class=" tab-button"
+     onclick="openTab('cadastro')">Cadastro</button>
+</div>
+
+<div id="login" class="tab-button">
+<h2>Cadastro</h2>
+<form
+  <input type="text" placeholder="Usuários">
+  <input type="password" placeholder="Senha">
+  <button type="submit">entrar</button>
+</form>
+</div>
+
+<div id="cadastro" class="tab-content"
+style="display: none;">
+><h2>Cadastro</h2>
+><form 
+   <input type="text" placeholder="Nome">
+   <input type="email" placeholder="Nome">
+   <input type="text" placeholder="Nome">
+
+</div>
+
+
+</div>
+
+
 </head>
 <body>
-    
+    <header>
+        <div class="barra-topo">
+            <div class="logo-topo">
+                <img src="assents/Design sem nome.png" alt="Logo_Marca" width="500" height="100">
+            </div>
+            <div class="menu-topo">
+                <a href="http://127.0.0.1:5500/home/index.html" target="_blank">Home</a>
+                <a href="http://127.0.0.1:5500/home/index.html" target="_blank">Sair</a>
+            </div>
+            
+        </div>
+    </header>
+    <footer>
+        © 2026 Shock Imports - Todos os direitos reservados
+    </footer>
 </body>
 </html>
