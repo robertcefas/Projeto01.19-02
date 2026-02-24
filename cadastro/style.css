@@ -30,6 +30,7 @@ body {
     font-weight: bold;
 }
 
+
 .menu-topo a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -94,7 +95,7 @@ input[type="radio"] {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(90, 1, 255, 0.651);
     color: rgb(94, 23, 235);
     font-family: 'Times New Roman', Times, serif;
 }
