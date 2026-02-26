@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding-top: 70px;
+    padding-bottom: 60px 
+}
+
+.barra-topo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 1px; 
+    z-index: 1000;
+}
+
+.logo-topo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.menu-topo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    padding: 1px 20px;
+    border: 1px solid rgb(94, 23, 235);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-topo a:hover {
+    background-color: rgb(94, 23, 235);
+    border-color: rgb(94, 23, 235);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: rgb(255, 255, 255);
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(90, 1, 255, 0.651);
+    color: rgb(94, 23, 235);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(4, 2, 8);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#login-tab:checked ~ .tabs label[for="login-tab"],
+#cadastro-tab:checked ~ .tabs label[for="cadastro-tab"] {
+    background-color: rgb(94, 23, 235);
+}
+
+
+.tab-content {
+    display: none;
+}
+
+
+#login-tab:checked ~ .content .login {
+    display: block;
+}
+
+#cadastro-tab:checked ~ .content .cadastro {
+    display: block;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(94, 23, 235);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(94, 23, 235);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
