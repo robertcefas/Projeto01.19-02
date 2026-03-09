@@ -86,8 +86,10 @@ input[type="radio"] {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
     color: rgb(94, 23, 235);
     font-family: 'Times New Roman', Times, serif;
-    animation: slideDown 1s ease-out;
+    
 }
+
+#login-tab:checked ~ .tabs label[for="login-tab"],
 
 @keyframes slideDown {
     from {

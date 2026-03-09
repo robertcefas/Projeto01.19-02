@@ -98,7 +98,6 @@ input[type="radio"] {
     box-shadow: 0 0 20px rgba(90, 1, 255, 0.651);
     color: rgb(163, 3, 255);
     font-family: 'Times New Roman', Times, serif;
-    animation: slideDown 1s ease-out;
 }
 
 @keyframes slideDown {
